@@ -1,7 +1,20 @@
 import React from 'react'
+import Link from 'next/link'
 
-export const CountryCard = () => {
+interface countryCardProps {
+    name: string
+}
+
+export const CountryCard = ({name}: countryCardProps) => {
   return (
-    <div>CountryCard</div>
+    <Link
+        className='dark:border-zinc-500 border-[1.5px] 
+        px-2 py-1 rounded hover:border-gray-400 text-md m-3 flex
+        items-center justify-center'
+        href={name}
+        key={name + "Card"}
+    >
+        {name}
+    </Link>
   )
 }

@@ -6,3 +6,7 @@
   font-family: "global vibes";
   src: url('../assets/fonts/GreatVibes-Regular.ttf');
 }
+
+body {
+  @apply bg-slate-950;
+}
