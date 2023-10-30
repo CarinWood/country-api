@@ -1,5 +1,6 @@
     import { getCountry } from "@/lib/CountryAPI";
     import Image from "next/image";
+    import Link from "next/link";
 
     export default async function page({params}: {params:{countryName: string}}) {
         const { countryName } =  params;
@@ -10,6 +11,12 @@
 
         return (
           <div className="w-full h-[100vh] flex flex-col items-center justify-start pt-12">
+               <Link href="/">
+                    <button className="absolute top-8 right-12 border-zinc-500 
+                    border-[1.5px]  py-1 px-2 rounded hover:border-gray-400">
+                         Back
+                    </button>
+                    </Link>
             <h1 className="my-4 text-3xl">{countryObject[0].name.common}</h1>
              <Image
                 width={150}

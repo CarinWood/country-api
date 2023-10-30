@@ -18,7 +18,8 @@ export const SearchCountries = ({countryList}: SearchCountriesProps) => {
     console.log(filteredCountryList.length)
   
   return (
-    <div className='w-full h-[100vh] flex flex-col justify-start items-center'>
+    <div className='w-full h-[100vh] flex flex-col justify-start 
+    items-center mt-10'>
         <h2 className='text-2xl py-6 text-center'>Search for a country!</h2>
         <div className='flex flex-col items-center justify-center'>
             <input
