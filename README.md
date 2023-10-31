@@ -10,4 +10,5 @@ The app uses a restfulAPI from restcountries.com and is built with Next.js, Type
 
 
 
+![Screenshot](./assets/images/screenshot_1.png)
 ![Screenshot](./assets/images/screenshot_2.png)
